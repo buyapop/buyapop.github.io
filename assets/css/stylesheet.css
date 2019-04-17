@@ -8,7 +8,7 @@ section {
 
 .bg { 
   /* The image used */
-  background-image: url(../../images/accueilPop.jpg);
+  background-image: url(../../images/pop1accueil.jpg);
 
   /* Full height */
   height: 100%; 
@@ -19,6 +19,39 @@ section {
   background-size: cover;
 }
 
-.textbg { 
-padding-top: 400px;
+
+
+/*produit*/
+.produit{
+  background-color: #8F8F8F;
 }
+
+.produitbas{
+  padding-top: 15%;
+}
+
+
+/*formulaire de contact*/
+
+.contact-form .form-control{
+    border-radius:1rem;
+}
+
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
