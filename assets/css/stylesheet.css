@@ -40,8 +40,15 @@ header{
 /* custom */
 
 .custom{
+  background-color: white;
 }
 
+.boutonRond {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1.5px solid black;
+}
 
 /*formulaire de contact*/
 

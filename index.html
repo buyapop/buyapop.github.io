@@ -12,9 +12,6 @@
 
     <title>Buy a pop</title>
 
-    <!-- font awesome -->
-    <link href="assets/fontawesome/css/all .css" rel="stylesheet">
-
     <!-- Bootstrap core CSS -->
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -24,7 +21,7 @@
 
   <body>
     <!-- Accueil -->
-    <header class="bg">
+    <header id="Accueil" class="bg">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
@@ -33,16 +30,16 @@
           </div>
           <ul class="nav navbar-nav navbar-collapse ml-auto">
             <li class="nav-item">
-              <a class="js-scroll-trigger nav-link" href="#">Accueil</a>
+              <a class="js-scroll-trigger nav-link" href="#Accueil">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="js-scroll-trigger nav-link" href="#">Le produit</a>
+              <a class="js-scroll-trigger nav-link" href="#produit">Le produit</a>
             </li>
             <li class="nav-item">
-              <a class="js-scroll-trigger nav-link" href="#">Custom</a>
+              <a class="js-scroll-trigger nav-link" href="#custom">Custom</a>
             </li>
             <li class="nav-item">
-              <a class="js-scroll-trigger nav-link" href="#">Contact</a>
+              <a class="js-scroll-trigger nav-link" href="#contact">Contact</a>
             </li>
           </ul>
             <button class="btn btn-light navbar-btn">Commander</button>
@@ -69,6 +66,7 @@
       <!-- <div id="content">
         <p>salut</p>
       </div> -->
+
       <!-- background et texte -->
       <div class="container text-center h-50" >
         <div class="row align-items-end h-100">
@@ -86,7 +84,7 @@
   
 
     <!-- produit -->
-    <section class="produit text-white">
+    <section id="produit" class="produit text-white">
       <div class="container">
         <div class="row">
           <div class="col-lg-3 mx-auto produitbas">
@@ -115,18 +113,60 @@
 
 
     <!-- custom -->
-    <section class="custom">
+    <section id="custom" class="custom">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
+          <div class="col-lg-10 mx-auto">
             <h2>Customize ton propre Pop</h2>
-            <p class="lead">script JS</p>
+              <div class="row">
+              <div class="col-lg-6">
+              <img src="images/popSVG.png" >
+              </div>
+              <div class="col-lg-6">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h3>Nom : </h3>
+                  </div>
+                  <div class="col-lg-6">
+                    <input type="text" name="txtNom" class="form-control" placeholder="Nom" value="" />
+                  </div>
+                </div>
+
+                <h3>Couleur bonnet 1 :</h3>
+                <button type="button" class="btn boutonRond mx-1" style="background-color: #fff " ></button>
+                <button type="button" class="btn boutonRond mx-1" style="background-color: #f00 " ></button>
+                <button type="button" class="btn boutonRond mx-1" style="background-color: #0f0 " ></button>
+                <button type="button" class="btn boutonRond mx-1" style="background-color: #00f " ></button>
+                <button type="button" class="btn boutonRond mx-1" style="background-color: #0ff " ></button>
+                <button type="button" class="btn boutonRond mx-1" style="background-color: #f0f " ></button>
+                <button type="button" class="btn boutonRond mx-1" style="background-color: #ff0 " ></button>      
+                <button type="button" class="btn boutonRond mx-1" style="background-color: #000 " ></button>
+
+                <h3>Couleur bonnet 2 :</h3>
+                <button type="button" class="btn boutonRond mx-1" style="background-color: #fff " ></button>
+                <button type="button" class="btn boutonRond mx-1" style="background-color: #f00 " ></button>
+                <button type="button" class="btn boutonRond mx-1" style="background-color: #0f0 " ></button>
+                <button type="button" class="btn boutonRond mx-1" style="background-color: #00f " ></button>
+                <button type="button" class="btn boutonRond mx-1" style="background-color: #0ff " ></button>
+                <button type="button" class="btn boutonRond mx-1" style="background-color: #f0f " ></button>
+                <button type="button" class="btn boutonRond mx-1" style="background-color: #ff0 " ></button>      
+                <button type="button" class="btn boutonRond mx-1" style="background-color: #000 " ></button>
+
+                <h3>Couleur yeux :</h3>
+                <button type="button" class="btn boutonRond mx-1" style="background-color: #00f " ></button>
+                <button type="button" class="btn boutonRond mx-1" style="background-color: #0f0 " ></button> 
+                <button type="button" class="btn boutonRond mx-1" style="background-color: #582900 " ></button>     
+                <button type="button" class="btn boutonRond mx-1" style="background-color: #000 " ></button>
+                <br>
+                <input type="submit" name="btnCommander" class="btn btn-primary" value="Commander" />
+              </div>
+            </div>
           </div>
       </div>
     </section>
 
     <!-- contact -->
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="container contact-form">
               <form method="post">
                 <div class="text-center text-white mb-3 mt-3 font-weight-bold">
@@ -165,8 +205,9 @@
         <div class="container">
           <div class="footer-social">
               <a href="https://www.instagram.com/leveritablepop/" class="social-icons"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="social-icons"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="social-icons"><i class="fa fa-google"></i></a>
+              <a href="https://www.facebook.com/pop.leveritable" class="social-icons"><i class="fa fa-facebook"></i></a>
+              <a onClick="javascript:window.open('mailto:leveritablepop@gmail.com');event.preventDefault()" href="mailto:leveritablepop@gmail.com" class="social-icons"><i class="fa fa-google"></i></a>
+
           </div>
         </div>
 
