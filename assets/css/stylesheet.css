@@ -1,5 +1,6 @@
 body, html {
   height: 100%;
+  position: relative;
 }
 
 section {
@@ -48,6 +49,20 @@ header{
   width: 30px;
   border-radius: 50%;
   border: 1.5px solid black;
+}
+
+canvas{
+  border: 5px solid #000;
+  position : absolute ; 
+  width : 80% ; 
+  height : auto ;
+}
+
+.FondCustom{
+  border: 5px solid #000;
+  position : absolute ;
+  width : 80% ; 
+  height : auto ;
 }
 
 /*formulaire de contact*/

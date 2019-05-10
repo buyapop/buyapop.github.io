@@ -15,3 +15,28 @@ $(document).ready(function(){
        .animate({scrollTop: $(target).offset().top}, 1000 );
     });
 });
+
+
+
+var canvasCorps = document.getElementById('corps');
+var ctxCorps = canvasCorps.getContext('2d');
+var imgCorps = new Image();
+imgCorps.src = "images/corps.png";
+
+var canvasBonnet = document.getElementById('bonnet');
+var ctxBonnet = canvasBonnet.getContext('2d');
+var imgBonnet = new Image();
+imgBonnet.src = "images/bonnet.png";
+
+
+
+function drawCorps(){
+  ctxCorps.drawImage(imgCorps,0,0, canvasCorps.width, canvasCorps.height);
+}
+
+function drawbonnet(){
+  ctxBonnet.drawImage(imgBonnet,0,0, canvasBonnet.width, canvasBonnet.height);
+}
+
+imgCorps.onload = drawCorps;
+imgBonnet.onload = drawbonnet;
