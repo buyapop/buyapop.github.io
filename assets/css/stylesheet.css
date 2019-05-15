@@ -54,15 +54,6 @@ header{
 canvas{
   border: 5px solid #000;
   position : absolute ; 
-  width : 80% ; 
-  height : auto ;
-}
-
-.FondCustom{
-  border: 5px solid #000;
-  position : absolute ;
-  width : 80% ; 
-  height : auto ;
 }
 
 /*formulaire de contact*/

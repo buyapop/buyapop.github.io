@@ -40,3 +40,14 @@ function drawbonnet(){
 
 imgCorps.onload = drawCorps;
 imgBonnet.onload = drawbonnet;
+
+function changeBonnet1(id) { 
+
+  if (id == 'btn1')
+    imgBonnet.src = "images/bonnet.png";
+  if (id == 'btn2')
+    imgBonnet.src = "images/bonnet2.png";
+  if (id == 'btn3')
+    imgBonnet.src = "images/bonnet3.png";
+}
+
